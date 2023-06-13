@@ -17,18 +17,28 @@ h2, h3 {
 }
 .listContainer {
   text-align: right;
-  display: flex;
+  /* display: flex; */
   padding-bottom: 20px;
+  font-size: 25px;
 }
 .headerLinks {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  /* text-align: right; */
 }
 .headerLinks .headerLinksItems {
   display: inline-block;
   margin-right: 10px; 
 }
+.anchorLink {
+  text-decoration: none;
+  color: #fd1d1d;
+}
+.anchorLink:hover {
+  color: #600979;
+}
+
 .biographyContainer {
   padding-bottom: 20px;
   flex: 1;
@@ -81,4 +91,7 @@ padding: 10px 20px;
 font-size: 16px;
 border: none;
 border-radius: 4px;
+}
+.goalSection {
+  /* padding-top: 0px; */
 }
