@@ -8,6 +8,7 @@ function showPrompt() {
   let gamePrompt;
   let enjoyMyquiz;
   let myGuessNumber;
+  // let myFavouriteFruit;
 
   alert("Hi, I'm Adesewa, welcome to my site");
   function userName() {
@@ -25,8 +26,9 @@ function showPrompt() {
       gamePrompt.toLowerCase() === "n"
     ) {
       alert(
-        "You have to seee my prompts. lets play pleaseeeeeeee *inserts cute eyes*"
+        "You have to seee my prompts. lets play pleaseeeeeeee try again*inserts cute eyes*"
       );
+
       // else alert ('you have to answer with yes, no, y or n')
     }
   }
@@ -47,7 +49,7 @@ function showPrompt() {
   numOfPets();
 
   function luckyNumber() {
-    myLuckyNumber = prompt("Do you believe in lucky numbers?");
+    myLuckyNumber = prompt("Do you think i believe in lucky numbers?");
     // myLuckyNumber = parseInt(myLuckyNumber);
     // console.log(luckyNumber);
     // console.log(typeof luckyNumber);
@@ -124,6 +126,38 @@ function showPrompt() {
     );
   }
   guessNumber();
+
+
+  function guessFavoriteFruits() {
+    const favoriteFruits = ["apple", "banana", "orange","watermelon"];
+    const maxAttempts = 6;
+    const guessedFruits = [];
+  
+    for (let i = 1; i <= maxAttempts; i++) {
+      const guess = prompt("Guess one of my favorite fruits:");
+  
+      let isCorrectGuess = false;
+      for (let j = 0; j < favoriteFruits.length; j++) {
+        if (guess.toLowerCase() === favoriteFruits[j].toLowerCase()) {
+          guessedFruits.push(guess);
+          isCorrectGuess = true;
+          break;
+        }
+      }
+  
+      if (isCorrectGuess) {
+        alert("Correct! You guessed one of my favorite fruits.");
+      } else {
+        alert("Incorrect guess. Try again.");
+      }
+    }
+  
+    alert("Game over! You made " + guessedFruits.length + " correct guess(es). My favorite fruits are: " + favoriteFruits + "");//guessedFruits.join(", ") ;
+  }
+  
+  guessFavoriteFruits();
+  
+  
 
   alert(
     "It is so nice to meet you " +
