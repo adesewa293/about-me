@@ -9,18 +9,20 @@ function showPrompt() {
   let enjoyMyquiz;
   let myGuessNumber;
   // let myFavouriteFruit;
+  let totalScore = 0;
 
   alert("Hi, I'm Adesewa, welcome to my site");
   function userName() {
     user = prompt("what is your name?");
     alert("welcome to my page " + user + "!");
-    gamePrompt = prompt("do you want to play a guessing game?");
+    gamePrompt = prompt("do you want to play a guessing game? you can answer with yes, no,y or n");
     // console.log(user);
     if (
       gamePrompt.toLowerCase() === "yes" ||
       gamePrompt.toLowerCase() === "y"
-    ) {
-      alert("Okay then, let us play " + user);
+      ) {
+        totalScore++;
+        alert("Okay then, let us play " + user);
     } else if (
       gamePrompt.toLowerCase() == "no" ||
       gamePrompt.toLowerCase() === "n"
@@ -44,6 +46,7 @@ function showPrompt() {
       alert("uh oh, i actually have zero");
     } else if (petNum.toLowerCase() === "no" || petNum.toLowerCase() === "n") {
       alert("that is correct, you do know me!");
+      totalScore++;
     }
   }
   numOfPets();
@@ -57,7 +60,8 @@ function showPrompt() {
       myLuckyNumber.toLowerCase() === "yes" ||
       myLuckyNumber.toLowerCase() === "y"
     ) {
-      alert("me too!");
+      alert("you are right! I do!");
+      totalScore++;
     } else if (
       myLuckyNumber.toLowerCase() === "no" ||
       myLuckyNumber.toLowerCase() === "n"
@@ -78,6 +82,7 @@ function showPrompt() {
       myCodingDays.toLowerCase() === "y"
     ) {
       alert("you must know me so well, talk is cheap, just show me the code.");
+      totalScore++;
     } else if (
       myCodingDays.toLowerCase() === "no" ||
       myCodingDays.toLowerCase() === "n"
@@ -94,6 +99,7 @@ function showPrompt() {
       enjoyMyquiz.toLowerCase() === "y"
     ) {
       alert("Thanks, i enjoyed creating it too");
+      totalScore++;
     } else if (
       enjoyMyquiz.toLowerCase() === "no" ||
       enjoyMyquiz.toLowerCase() === "n"
@@ -111,6 +117,7 @@ function showPrompt() {
 
       if (myGuessNumber === correctNumber) {
         alert("Congratulations! You guessed the correct number.");
+        totalScore++;
         return;
       } else if (myGuessNumber > correctNumber && myGuessNumber !== 5) {
         alert("Too high, try again!");
@@ -147,6 +154,8 @@ function showPrompt() {
   
       if (isCorrectGuess) {
         alert("Correct! You guessed one of my favorite fruits.");
+        totalScore++;
+        break;
       } else {
         alert("Incorrect guess. Try again.");
       }
@@ -156,6 +165,10 @@ function showPrompt() {
   }
   
   guessFavoriteFruits();
+  
+alert(
+  'Congratulations ' + user + ' you have answered ' + totalScore + ' questions correctly.'
+)
   
   
 
@@ -167,3 +180,4 @@ function showPrompt() {
       " to believing in lucky numbers, you also know that I code 7 days a week, i will assume you code 7 days a week too!"
   );
 }
+
