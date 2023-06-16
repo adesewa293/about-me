@@ -8,7 +8,6 @@ function showPrompt() {
   let gamePrompt;
   let enjoyMyquiz;
   let myGuessNumber;
-  // let myFavouriteFruit;
   let totalScore = 0;
 
   alert("Hi, I'm Adesewa, welcome to my site");
@@ -16,7 +15,7 @@ function showPrompt() {
     user = prompt("what is your name?");
     alert("welcome to my page " + user + "!");
     gamePrompt = prompt("do you want to play a guessing game? you can answer with yes, no,y or n");
-    // console.log(user);
+    
     if (
       gamePrompt.toLowerCase() === "yes" ||
       gamePrompt.toLowerCase() === "y"
@@ -31,16 +30,14 @@ function showPrompt() {
         "You have to seee my prompts. lets play pleaseeeeeeee try again*inserts cute eyes*"
       );
 
-      // else alert ('you have to answer with yes, no, y or n')
+      
     }
   }
   userName();
 
   function numOfPets() {
     petNum = prompt("Do you think i own any pets " + user + "?");
-    // petNum = parseInt(petNum);
-    // console.log(petNum);
-    // console.log(typeof petNum);
+    
 
     if (petNum.toLowerCase() === "yes" || petNum.toLowerCase() === "y") {
       alert("uh oh, i actually have zero");
@@ -53,9 +50,7 @@ function showPrompt() {
 
   function luckyNumber() {
     myLuckyNumber = prompt("Do you think i believe in lucky numbers?");
-    // myLuckyNumber = parseInt(myLuckyNumber);
-    // console.log(luckyNumber);
-    // console.log(typeof luckyNumber);
+    
     if (
       myLuckyNumber.toLowerCase() === "yes" ||
       myLuckyNumber.toLowerCase() === "y"
@@ -74,9 +69,7 @@ function showPrompt() {
 
   function codingDays() {
     myCodingDays = prompt("do you think i code everyday a week?");
-    // myCodingDays = parseInt(myCodingDays);
-    // console.log(codingDays);
-    // console.log(typeof codingDays);
+    
     if (
       myCodingDays.toLowerCase() === "yes" ||
       myCodingDays.toLowerCase() === "y"

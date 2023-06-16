@@ -8,7 +8,7 @@ body {
   padding: 70px;
 }
 h1{
-  /* text-align: center; */
+  
   color: #f1066d;
   padding-bottom: 20px;
 } 
@@ -17,7 +17,6 @@ h2, h3 {
 }
 .listContainer {
   text-align: right;
-  /* display: flex; */
   padding-bottom: 20px;
   font-size: 25px;
 }
@@ -25,7 +24,7 @@ h2, h3 {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  /* text-align: right; */
+ 
 }
 .headerLinks .headerLinksItems {
   display: inline-block;
@@ -44,8 +43,6 @@ h2, h3 {
   flex: 1;
   max-width: 50%;
   font-size: 20px;
-  /* height: 100vh; */
-  /* justify-content: center; */
   text-align: justify;
   padding-right: 40px;
 }
@@ -54,8 +51,6 @@ h2, h3 {
   width: 50%;
   flex: 1;
   font-size: 20px;
-  /* height: 100vh; */
-  /* justify-content: center; */
   text-align: justify;
 }
 .educationContainer {
@@ -93,5 +88,5 @@ border: none;
 border-radius: 4px;
 }
 .goalSection {
-  /* padding-top: 0px; */
+  
 }
